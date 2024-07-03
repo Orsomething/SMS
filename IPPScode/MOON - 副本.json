@@ -1,0 +1,197 @@
+{
+    "num_machine": 5,
+
+    "job1": [
+        {
+            "id": 1,
+            "machine": [
+                1,
+                2
+            ],
+            "time": [
+                5,
+                3
+            ],
+            "preprocess_id": [],
+            "preprocess_combine": "and"
+        },
+        {
+            "id": 2,
+            "machine": [
+                2
+            ],
+            "time": [
+                5
+            ],
+            "preprocess_id": [1],
+            "preprocess_combine": "and"
+        },
+        {
+            "id": "F",
+            "preprocess_id": [2],
+            "preprocess_combine": "and"
+        }
+    ],
+    "job2": [
+        {
+            "id": 3,
+            "machine": [
+                3,
+                4
+            ],
+            "time": [
+                6,
+                5
+            ],
+            "preprocess_id": [],
+            "preprocess_combine": "and"
+        },
+        {
+            "id": 4,
+            "machine": [
+                5
+            ],
+            "time": [
+                4
+            ],
+            "preprocess_id": [3],
+            "preprocess_combine": "and"
+        },
+        {
+            "id": "F",
+            "preprocess_id": [4],
+            "preprocess_combine": "and"
+        }
+    ],
+    "job3": [
+        {
+            "id": 5,
+            "machine": [
+                2,
+                1
+            ],
+            "time": [
+                4,
+                5
+            ],
+            "preprocess_id": [],
+            "preprocess_combine": "and"
+        },
+        {
+            "id": 6,
+            "machine": [
+                3,
+                4
+            ],
+            "time": [
+                2,
+                3
+            ],
+            "preprocess_id": [5],
+            "preprocess_combine": "and"
+        },
+        {
+            "id": 7,
+            "machine": [
+                2
+            ],
+            "time": [
+                5
+            ],
+            "preprocess_id": [],
+            "preprocess_combine": "and"
+        },
+        {
+            "id": "F",
+            "preprocess_id": [6, 7],
+            "preprocess_combine": "and"
+        }
+    ],
+    "job4": [
+        {
+            "id": 8,
+            "machine": [
+                3
+            ],
+            "time": [
+                4
+            ],
+            "preprocess_id": [],
+            "preprocess_combine": "and"
+        },
+        {
+            "id": 9,
+            "machine": [
+                4
+            ],
+            "time": [
+                5
+            ],
+            "preprocess_id": [8],
+            "preprocess_combine": "and"
+        },
+        {
+            "id": "F",
+            "preprocess_id": [9],
+            "preprocess_combine": "and"
+        }
+    ],
+    "job5": [
+        {
+            "id": 10,
+            "machine": [
+                1,
+                2
+            ],
+            "time": [
+                4,
+                3
+            ],
+            "preprocess_id": [],
+            "preprocess_combine": "and"
+        },
+        {
+            "id": 11,
+            "machine": [
+                1,
+                2
+            ],
+            "time": [
+                2,
+                4
+            ],
+            "preprocess_id": [10],
+            "preprocess_combine": "and"
+        },
+        {
+            "id": 12,
+            "machine": [
+                3
+            ],
+            "time": [
+                5
+            ],
+            "preprocess_id": [],
+            "preprocess_combine": "and"
+        },
+        {
+            "id": 13,
+            "machine": [
+                3,
+                5
+            ],
+            "time": [
+                4,
+                3
+            ],
+            "preprocess_id": [11, 12],
+            "preprocess_combine": "and"
+        },
+        {
+            "id": "F",
+            "preprocess_id": [13],
+            "preprocess_combine": "and"
+        }
+    ]
+
+}

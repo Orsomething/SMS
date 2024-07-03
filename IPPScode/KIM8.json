@@ -1,0 +1,885 @@
+{
+    "job2": [
+        {
+            "id": "2-1",
+            "machine": [5,8,14],
+            "time": [10,16,13],
+            "preprocess_id": [],
+            "preprocess_combine": "and",
+            "postprocess_id":["2-2","2-4"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "2-2",
+            "machine": [8,9,15],
+            "time": [6,8,7],
+            "preprocess_id": ["2-1"],
+            "preprocess_combine": "and",
+            "postprocess_id":["2-3"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "2-3",
+            "machine": [4],
+            "time": [40],
+            "preprocess_id": ["2-2"],
+            "preprocess_combine": "and",
+            "postprocess_id":["2-6"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "2-4",
+            "machine": [6,9,7,12],
+            "time": [14,10,20,13],
+            "preprocess_id": ["2-1"],
+            "preprocess_combine": "and",
+            "postprocess_id":["2-5"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "2-5",
+            "machine": [1,7,11],
+            "time": [33,40,43],
+            "preprocess_id": ["2-4"],
+            "preprocess_combine": "and",
+            "postprocess_id":["2-6"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "2-6",
+            "machine": [1,5],
+            "time": [42,38],
+            "preprocess_id": ["2-3","2-5"],
+            "preprocess_combine": "and",
+            "postprocess_id":[],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "2-7",
+            "machine": [6,11,15],
+            "time": [25,33,30],
+            "preprocess_id": [],
+            "preprocess_combine": "and",
+            "postprocess_id":["2-8"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "2-8",
+            "machine": [10,15],
+            "time": [41,44],
+            "preprocess_id": ["2-7"],
+            "preprocess_combine": "and",
+            "postprocess_id":["2-9","2-12"],
+            "postprocess_combine":"or"
+        },
+        {
+            "id": "2-9",
+            "machine": [2,13],
+            "time": [10,12],
+            "preprocess_id": ["2-8"],
+            "preprocess_combine": "and",
+            "postprocess_id":["2-10"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "2-10",
+            "machine": [11,14,15],
+            "time": [34,24,30],
+            "preprocess_id": ["2-9"],
+            "preprocess_combine": "and",
+            "postprocess_id":["2-11"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "2-11",
+            "machine": [6,11],
+            "time": [38,42],
+            "preprocess_id": ["2-10"],
+            "preprocess_combine": "and",
+            "postprocess_id":["2-14"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "2-12",
+            "machine": [4,8,12],
+            "time": [25,26,30],
+            "preprocess_id": ["2-8"],
+            "preprocess_combine": "and",
+            "postprocess_id":["2-13"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "2-13",
+            "machine": [7],
+            "time": [39],
+            "preprocess_id": ["2-12"],
+            "preprocess_combine": "and",
+            "postprocess_id":["2-14"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "2-14",
+            "machine": [10,12],
+            "time": [37,40],
+            "preprocess_id": ["2-11","2-13"],
+            "preprocess_combine": "or",
+            "postprocess_id":[],
+            "postprocess_combine":"and"
+        }
+    ],
+
+    "job6": [
+        {
+            "id": "6-1",
+            "machine": [3,4,11],
+            "time": [38,33,36],
+            "preprocess_id": [],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-2"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-2",
+            "machine": [2,3,6],
+            "time": [22,21,19],
+            "preprocess_id": ["6-1"],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-3"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-3",
+            "machine": [5],
+            "time": [14],
+            "preprocess_id": ["6-2"],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-4"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-4",
+            "machine": [5,8],
+            "time": [17,20],
+            "preprocess_id": ["6-3"],
+            "preprocess_combine": "and",
+            "postprocess_id":[],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-5",
+            "machine": [3,6,11],
+            "time": [36,33,39],
+            "preprocess_id": [],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-6","6-11"],
+            "postprocess_combine":"or"
+        },
+        {
+            "id": "6-6",
+            "machine": [2,3,10],
+            "time": [24,20,18],
+            "preprocess_id": ["6-5"],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-7"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-7",
+            "machine": [3,9,15],
+            "time": [21,17,24],
+            "preprocess_id": ["6-6"],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-8","6-10"],
+            "postprocess_combine":"or"
+        },
+        {
+            "id": "6-8",
+            "machine": [8],
+            "time": [38],
+            "preprocess_id": ["6-7"],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-9"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-9",
+            "machine": [4,11],
+            "time": [19,15],
+            "preprocess_id": ["6-8", "6-10"],
+            "preprocess_combine": "or",
+            "postprocess_id":["6-14"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-10",
+            "machine": [8,10,15],
+            "time": [14,19,17],
+            "preprocess_id": ["6-7"],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-9"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-11",
+            "machine": [1,4,9,13],
+            "time": [25,21,19,28],
+            "preprocess_id": ["6-5"],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-12"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-12",
+            "machine": [7,12],
+            "time": [42,43],
+            "preprocess_id": ["6-11"],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-13"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-13",
+            "machine": [1,2,6],
+            "time": [48,42,46],
+            "preprocess_id": ["6-12"],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-14"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-14",
+            "machine": [7,10],
+            "time": [10,14],
+            "preprocess_id": ["6-9","6-13"],
+            "preprocess_combine": "or",
+            "postprocess_id":[],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-15",
+            "machine": [2,13,14],
+            "time": [14,16,13],
+            "preprocess_id": [],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-16","6-17"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-16",
+            "machine": [1,4,5,8],
+            "time": [36,33,31,34],
+            "preprocess_id": ["6-15"],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-19"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-17",
+            "machine": [1,12],
+            "time": [47,44],
+            "preprocess_id": ["6-15"],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-18"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-18",
+            "machine": [9,10,13],
+            "time": [30,26,29],
+            "preprocess_id": ["6-17"],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-19"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-19",
+            "machine": [1,5,12],
+            "time": [18,19,15],
+            "preprocess_id": ["6-16", "6-18"],
+            "preprocess_combine": "and",
+            "postprocess_id":["6-20"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "6-20",
+            "machine": [9,11],
+            "time": [24,25],
+            "preprocess_id": ["6-19"],
+            "preprocess_combine": "and",
+            "postprocess_id":[],
+            "postprocess_combine":"and"
+        }
+    ],
+
+    "job7": [
+        {
+            "id": "7-1",
+            "machine":  [7,8],
+            "time": [12,17],
+            "preprocess_id": [],
+            "preprocess_combine": "orand",
+            "postprocess_id":["7-2","7-7","7-19"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-2",
+            "machine": [2,5,8,12],
+            "time": [7,6,8,11],
+            "preprocess_id": ["7-1"],
+            "preprocess_combine": "and",
+            "postprocess_id":["7-3","7-4"],
+            "postprocess_combine":"or"
+        },
+        {
+            "id": "7-3",
+            "machine": [11,15],
+            "time": [30,27],
+            "preprocess_id": ["7-2"],
+            "preprocess_combine": "and",
+            "postprocess_id":["7-6"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-4",
+            "machine": [7],
+            "time": [27],
+            "preprocess_id": ["7-2"],
+            "preprocess_combine": "and",
+            "postprocess_id":["7-5"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-5",
+            "machine": [2,3,9],
+            "time": [10,11,16],
+            "preprocess_id": ["7-4"],
+            "preprocess_combine": "and",
+            "postprocess_id":["7-6"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-6",
+            "machine": [4,11,13],
+            "time": [46,50,49],
+            "preprocess_id": ["7-3","7-5"],
+            "preprocess_combine": "or",
+            "postprocess_id":["7-10"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-7",
+            "machine": [3],
+            "time": [22],
+            "preprocess_id": ["7-1"],
+            "preprocess_combine": "and",
+            "postprocess_id":["7-8"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-8",
+            "machine": [10,5],
+            "time": [10,9],
+            "preprocess_id": ["7-7"],
+            "preprocess_combine": "and",
+            "postprocess_id":["7-9"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-9",
+            "machine": [1,2,6],
+            "time": [27,28,24],
+            "preprocess_id": ["7-8"],
+            "preprocess_combine": "and",
+            "postprocess_id":["7-10"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-10",
+            "machine": [6,12,13],
+            "time": [8,5,11],
+            "preprocess_id": ["7-6","7-9"],
+            "preprocess_combine": "or",
+            "postprocess_id":["7-11"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-11",
+            "machine": [2,9],
+            "time": [47,48],
+            "preprocess_id": ["7-10"],
+            "preprocess_combine": "and",
+            "postprocess_id":["7-12","7-14"],
+            "postprocess_combine":"or"
+        },
+        {
+            "id": "7-12",
+            "machine": [1,8],
+            "time": [27,30],
+            "preprocess_id": ["7-11"],
+            "preprocess_combine": "and",
+            "postprocess_id":["7-13"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-13",
+            "machine": [9,13,14],
+            "time": [18,19,20],
+            "preprocess_id": ["7-12"],
+            "preprocess_combine": "and",
+            "postprocess_id":["7-18"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-14",
+            "machine": [7,11],
+            "time": [22,20],
+            "preprocess_id": ["7-11"],
+            "preprocess_combine": "and",
+            "postprocess_id":["7-15","7-16"],
+            "postprocess_combine":"or"
+        },
+        {
+            "id": "7-15",
+            "machine": [7,8,13],
+            "time": [13,11,14],
+            "preprocess_id": ["7-14"],
+            "preprocess_combine": "and",
+            "postprocess_id":["7-17"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-16",
+            "machine": [6,14],
+            "time": [15,10],
+            "preprocess_id": ["7-14"],
+            "preprocess_combine": "and",
+            "postprocess_id":["7-17"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-17",
+            "machine": [4,5,7],
+            "time": [21,26,20],
+            "preprocess_id": ["7-15","7-16"],
+            "preprocess_combine": "or",
+            "postprocess_id":["7-18"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-18",
+            "machine": [4,5,13],
+            "time": [29,30,26],
+            "preprocess_id": ["7-13","7-17"],
+            "preprocess_combine": "or",
+            "postprocess_id":[],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-19",
+            "machine": [1,2],
+            "time": [35,31],
+            "preprocess_id": ["7-1"],
+            "preprocess_combine": "and",
+            "postprocess_id":["7-20"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "7-20",
+            "machine": [5,6,11],
+            "time": [22,18,23],
+            "preprocess_id": ["7-19"],
+            "preprocess_combine": "and",
+            "postprocess_id":["7-21"],
+            "postprocess_combine":"and"
+       },
+       {
+            "id": "7-21",
+            "machine": [1,7,10],
+            "time": [32,33,28],
+            "preprocess_id": ["7-20"],
+            "preprocess_combine": "and",
+            "postprocess_id":[],
+            "postprocess_combine":"and"
+        }
+    ],
+
+    "job10": [
+        {
+            "id": "10-1",
+            "machine": [1,2,3,4],
+            "time": [34,39,40,33],
+            "preprocess_id": [],
+            "preprocess_combine": "and",
+            "postprocess_id":["10-2"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "10-2",
+            "machine": [6,15],
+            "time": [27,20],
+            "preprocess_id": ["10-1"],
+            "preprocess_combine": "and",
+            "postprocess_id":[],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "10-3",
+            "machine": [1,13],
+            "time": [22,24],
+            "preprocess_id": [],
+            "preprocess_combine": "and",
+            "postprocess_id":["10-4","10-7"],
+            "postprocess_combine":"or"
+        },
+        {
+            "id": "10-4",
+            "machine": [10,13],
+            "time": [22,20],
+            "preprocess_id":["10-3"],
+            "preprocess_combine": "and",
+            "postprocess_id":["10-5"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "10-5",
+            "machine": [4,7,12],
+            "time": [37,35,38],
+            "preprocess_id": ["10-4"],
+            "preprocess_combine": "and",
+            "postprocess_id":["10-6"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "10-6",
+            "machine": [5,9],
+            "time": [10,12],
+            "preprocess_id": ["10-5"],
+            "preprocess_combine": "and",
+            "postprocess_id":["10-9"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "10-7",
+            "machine": [8,12,14],
+            "time": [39,32,36],
+            "preprocess_id": ["10-3"],
+            "preprocess_combine": "and",
+            "postprocess_id":["10-8"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "10-8",
+            "machine": [12],
+            "time": [44],
+            "preprocess_id": ["10-7"],
+            "preprocess_combine": "and",
+            "postprocess_id":["10-9"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "10-9",
+            "machine": [2,3,6,9],
+            "time": [23,24,21,19],
+            "preprocess_id": ["10-6","10-8"],
+            "preprocess_combine": "or",
+            "postprocess_id":["10-10"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "10-10",
+            "machine": [3,12],
+            "time": [48,45],
+            "preprocess_id": ["10-9"],
+            "preprocess_combine": "and",
+            "postprocess_id":["10-11"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "10-11",
+            "machine": [14],
+            "time": [17],
+            "preprocess_id": ["10-10"],
+            "preprocess_combine": "and",
+            "postprocess_id":[],
+            "postprocess_combine":"and"
+        }
+    ],
+
+    "job14": [
+        {
+            "id": "14-1",
+            "machine": [3,9],
+            "time": [46,43],
+            "preprocess_id": [],
+            "preprocess_combine": "and",
+            "postprocess_id":["14-2","14-4"],
+            "postprocess_combine":"or"
+        },
+        {
+            "id": "14-2",
+            "machine": [1,2,7,12],
+            "time": [10,17,11,13],
+            "preprocess_id": ["14-1"],
+            "preprocess_combine": "and",
+            "postprocess_id":["14-3"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "14-3",
+            "machine": [4,7,8],
+            "time": [8,9,10],
+            "preprocess_id": ["14-2"],
+            "preprocess_combine": "and",
+            "postprocess_id":["14-5"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "14-4",
+            "machine": [3,6],
+            "time": [18,25],
+            "preprocess_id":["14-1"],
+            "preprocess_combine": "and",
+            "postprocess_id":["14-5"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "14-5",
+            "machine": [4],
+            "time": [9],
+            "preprocess_id": ["14-3","14-4"],
+            "preprocess_combine": "or",
+            "postprocess_id":["14-6","14-7"],
+            "postprocess_combine":"or"
+        },
+        {
+            "id": "14-6",
+            "machine": [3,4,13],
+            "time": [29,27,33],
+            "preprocess_id": ["14-5"],
+            "preprocess_combine": "and",
+            "postprocess_id":["14-8"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "14-7",
+            "machine": [5,9],
+            "time": [30,29],
+            "preprocess_id": ["14-5"],
+            "preprocess_combine": "and",
+            "postprocess_id":["14-8"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "14-8",
+            "machine": [2,3],
+            "time": [9,8],
+            "preprocess_id": ["14-6","14-7"],
+            "preprocess_combine": "or",
+            "postprocess_id":[],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "14-9",
+            "machine": [5,12,15],
+            "time": [18,10,19],
+            "preprocess_id": [],
+            "preprocess_combine": "and",
+            "postprocess_id":["14-10","14-12"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "14-10",
+            "machine": [9,15],
+            "time": [28,25],
+            "preprocess_id": ["14-9"],
+            "preprocess_combine": "and",
+            "postprocess_id":["14-11"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "14-11",
+            "machine": [4,14,15],
+            "time": [42,43,47],
+            "preprocess_id": ["14-10"],
+            "preprocess_combine": "and",
+            "postprocess_id":["14-13"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "14-12",
+            "machine": [9,10,14],
+            "time": [35,31,29],
+            "preprocess_id": ["14-9"],
+            "preprocess_combine": "and",
+            "postprocess_id":["14-13"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "14-13",
+            "machine": [6,10],
+            "time": [9,7],
+            "preprocess_id": ["14-11","14-12"],
+            "preprocess_combine": "and",
+            "postprocess_id":[],
+            "postprocess_combine":"and"
+        }
+    ],
+
+    "job18": [
+        {
+            "id": "18-1",
+            "machine": [3,8],
+            "time": [8,13],
+            "preprocess_id": [],
+            "preprocess_combine": "and",
+            "postprocess_id":["18-2","18-4"],
+            "postprocess_combine":"or"
+        },
+        {
+            "id": "18-2",
+            "machine": [5,6,8],
+            "time": [16,12,13],
+            "preprocess_id": ["18-1"],
+            "preprocess_combine": "and",
+            "postprocess_id":["18-3"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "18-3",
+            "machine": [2],
+            "time": [21],
+            "preprocess_id": ["18-2"],
+            "preprocess_combine": "and",
+            "postprocess_id":["18-6"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "18-4",
+            "machine": [1,5,10],
+            "time": [13,16,18],
+            "preprocess_id":["18-1"],
+            "preprocess_combine": "and",
+            "postprocess_id":["18-5"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "18-5",
+            "machine": [9],
+            "time": [17],
+            "preprocess_id": ["18-4"],
+            "preprocess_combine": "and",
+            "postprocess_id":["18-6"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "18-6",
+            "machine": [5,8],
+            "time": [46,47],
+            "preprocess_id": ["18-3","18-5"],
+            "preprocess_combine": "or",
+            "postprocess_id":[],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "18-7",
+            "machine": [3,7,13],
+            "time": [44,48,49],
+            "preprocess_id": [],
+            "preprocess_combine": "and",
+            "postprocess_id":["18-8","18-9"],
+            "postprocess_combine":"or"
+        },
+        {
+            "id": "18-8",
+            "machine": [5,6,13],
+            "time": [17,14,10],
+            "preprocess_id": ["18-7"],
+            "preprocess_combine": "and",
+            "postprocess_id":["18-10"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "18-9",
+            "machine": [8,15],
+            "time": [16,13],
+            "preprocess_id": ["18-7"],
+            "preprocess_combine": "and",
+            "postprocess_id":["18-10"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "18-10",
+            "machine": [3,11,15],
+            "time": [28,27,30],
+            "preprocess_id": ["18-8","18-9"],
+            "preprocess_combine": "or",
+            "postprocess_id":["18-11"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "18-11",
+            "machine": [10,13],
+            "time": [48,50],
+            "preprocess_id": ["18-10"],
+            "preprocess_combine": "and",
+            "postprocess_id":[],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "18-12",
+            "machine": [5,13,15],
+            "time": [31,32,36],
+            "preprocess_id": [],
+            "preprocess_combine": "and",
+            "postprocess_id":["18-13","18-14"],
+            "postprocess_combine":"or"
+        },
+        {
+            "id": "18-13",
+            "machine": [3,6,9],
+            "time": [30,28,26],
+            "preprocess_id": ["18-12"],
+            "preprocess_combine": "and",
+            "postprocess_id":["18-16"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "18-14",
+            "machine": [2],
+            "time": [11],
+            "preprocess_id": ["18-12"],
+            "preprocess_combine": "and",
+            "postprocess_id":["18-15"],
+            "postprocess_combine":"and"
+        },
+       {
+            "id": "18-15",
+            "machine": [1,14],
+            "time": [16,18],
+            "preprocess_id": ["18-14"],
+            "preprocess_combine": "and",
+            "postprocess_id":["18-16"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "18-16",
+            "machine": [4,15],
+            "time": [18,19],
+            "preprocess_id": ["18-13","18-15"],
+            "preprocess_combine": "or",
+            "postprocess_id":["18-17"],
+            "postprocess_combine":"and"
+        },
+        {
+            "id": "18-17",
+            "machine": [3,10,14],
+            "time": [36,32,35],
+            "preprocess_id": ["18-16"],
+            "preprocess_combine": "and",
+            "postprocess_id":[],
+            "postprocess_combine":"and"
+      
+        }
+    ]
+
+}
